@@ -1,0 +1,237 @@
+@keyframes textoReproduzido {
+    0% {
+        width: 0;
+        color: transparent;
+    }
+    100% {
+        width: 100%;
+        color: whitesmoke
+    }
+}
+
+
+#textoReproduzido {
+    font-size: 30px;
+    color: transparent;
+    text-shadow: 2px 4px red;
+    animation: textoReproduzido 6s forwards;
+    animation-delay: 3s;
+}
+
+body {
+    background-image: url('anony.jpg');
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Alinhar ao topo da página */
+    overflow-x: hidden;
+    
+    background-repeat: no-repeat;
+    background-color: black;
+}
+h1 {
+    display: flex;
+}
+#alerta {
+    justify-content: center;
+    width: 10px;
+    display: flex;
+    flex-direction: column;
+
+}
+#alert{
+    justify-content: center;
+    display: flex;
+}
+@keyframes fadeInLetters {
+    0% {
+        color: transparent;
+        background-size: 90% 100%;
+    }
+    20% {
+        color: rgb(233, 233, 233);
+    }
+    70%{
+        color: #303030;
+        background-size: 10% 100%;
+    }
+}
+
+#txtalert {
+    color: rgb(255, 0, 0);
+    font-size: 20px;
+    justify-content: center;
+    text-align: center;
+    white-space: nowrap;
+    margin-top: -5px;
+    text-shadow: 1px 1px 1px white;
+    opacity: 1; /* Inicia com opacidade 0 para a animação fadeIn */
+    animation: fadeInLetters 0.9s infinite; /* A animação dura 0.5 segundo por letra */
+    animation-delay: 1s; /* Atraso de 7 segundos antes do início da animação */
+}
+
+
+
+
+#alertt{
+    width: 50px;
+    height: 50px;
+    
+
+}
+#caixainicio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#welcome {
+    font-size: 120px; /* Tamanho aumentado */
+    color: white;
+    text-align: center;
+    white-space: nowrap;
+    animation: revealCyberSecurity 2s forwards; /* Maior tempo de animação */
+    padding: 10px;
+    margin-top: -20px; /* Ajuste a margem superior para mover para cima */
+    text-shadow: 2px 2px 14px  #e50914;
+    display: flex;
+    justify-content: center;
+
+}
+
+#inicio {
+    font-size: 40px; /* Tamanho ajustado */
+    font: 40px sans-serif;
+    color: transparent;
+    text-align: center;
+   
+    white-space:inherit;
+    animation: revealWarriorAngel 6s forwards; /* Aparece após o Cyber Security */
+    animation-delay: 0s; /* Inicia após a animação do Cyber Security */
+    margin-top: -60px;
+    display: flex;
+    justify-content: center;
+    text-shadow: 1px 2px 4px #ff2e2e;
+}
+#boxnome {
+    display: flex;
+    justify-content: center; 
+    color: #ff4444;
+}
+.box{
+    display: flex;
+    color: aliceblue;
+
+}
+
+#nome {
+    font-size: 45px; /* Tamanho da mensagem de controle */
+    color: transparent;
+    text-align: center;
+    white-space: nowrap;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    animation: revealControlMessage 6s forwards; /* Aparece após o Warrior angel */
+    animation-delay: 4s; /* Inicia após a animação do Warrior angel */
+    margin-top: 0px; /* Ajuste a margem superior */
+    display: flex;
+    justify-content: center;
+    text-shadow: 1px 2px 3px #ff4444;
+}
+input {
+    background-color: rgb(145, 145, 145);
+    display: flex;
+    width: 130px;
+    height: 35px;
+    border-radius: 45%;
+    border-style:solid;
+    justify-content: center;
+    
+}
+#botaoconf {
+    border-radius: 45%;
+    border-style: solid;
+    background-color: #fa2e2e;
+    color: #000;
+    font-weight: bold;
+}
+.texto {
+    text-align: center;
+    font-size: 20px;
+    color: black;
+}
+
+.nome::placeholder{
+    color: black;
+    font-weight: bold; 
+}
+#textoReproduzido {
+    font-size: 30px;
+    color: white;
+    text-shadow: 2px 4px red;
+    animation: textoReproduzido 4s infinite;
+    animation-delay: 2s;
+    justify-content: center;
+    white-space: nowrap;
+}
+@keyframes revealCyberSecurity {
+    0% {
+        width: 0;
+        color: transparent;
+    }
+    100% {
+        width: 100%;
+        color: whitesmoke
+    }
+}
+
+@keyframes revealWarriorAngel {
+    0% {
+        width: 0;
+        color: transparent;
+    }
+    50% {
+        
+        color: transparent;
+    }
+    100% {
+        width: 100%;
+        color: rgb(255, 255, 255); /* Cor vermelha */
+    }
+}
+
+@keyframes revealControlMessage {
+    0% {
+        width: 0;
+        color: transparent;
+    }
+    100% {
+        width: 100%;
+        color: white;
+    }
+}
+.flash {
+    width: 100px;
+    height: 100px;
+    background-image: url('captura.gif'); /* Substitua 'seuarquivo.gif' pelo caminho do seu arquivo GIF */
+    background-size: cover; /* Ajuste o dimensionamento da imagem, se necessário */
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    display: none;
+    animation: flashAnimation 0.11s ease-in-out;
+}
+
+@keyframes flashAnimation {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
