@@ -1,0 +1,497 @@
+/* Estilos para ícones */
+@import url(https://use.fontawesome.com/releases/v6.4.2/css/all.css);
+@import url(https://fonts.googleapis.com/css?family=Roboto:100);
+
+
+.loader,
+span,
+.spinner {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+
+}
+span{
+    
+    padding-left: 600px;
+    font-size: 35px;
+    padding-top: -20%;
+    letter-spacing: 0px;
+    color: #ffffff;
+    text-shadow: 
+        0 0 0 #ffffff,
+        0 0 2px #ff0000,
+        0 0 4px #ff0000,
+        0 0 6px #ff0000,
+        0 0 8px #ff0000,
+        0 0 10px #ff0000;
+}   
+ 
+.spinner {
+    position: absolute;
+    border-radius: 40%;
+    padding-left: 20px;
+    height: 88px;
+    padding-top: 0px;
+    margin-left: 550px;
+    margin-top: 0px;
+    box-shadow:
+     3px 0 1px -1px #f06565,
+     5px 0 5px #ff0000,
+     inset -10px 0 10px -5px #1f1c1c;
+    animation: loading 4s linear; 
+
+}
+
+
+
+
+a {
+    margin: 0 20px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    background: #131212;
+    width: 75px;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: 0.5s;
+    background: transparent;
+    color: var(--color);
+    font-size: 2em;
+  
+}
+.test {  
+    margin: 0 20px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    background: #fff;
+    width: 75px;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: 0.5s;
+    background: rgb(5, 5, 5);
+    color: var(--color);
+    font-size: 2em;}
+
+a:hover {
+    background: var(--color);
+    color: #050801;
+    text-decoration: underline;
+    box-shadow: 0 0 5px var(--color),
+                0 0 25px var(--color),
+                0 0 50px var(--color),
+                0 0 200px var(--color);
+                
+}
+/* Estilos para o tooltip */
+.giovani_aveliino {
+    position: relative;
+    display: inline-block;
+}
+
+.giovani_aveliino a {
+    text-decoration: none;
+    position: relative;
+    font-size: 25px;
+}
+
+.giovani_aveliino a i {
+    font-size: 2em;
+    color: var(--color);
+    transition: color 0.5s;
+   
+}
+
+.giovani_aveliino a:hover i {
+    color: black;
+}
+
+.giovani_aveliino a:hover .tooltip {
+    visibility: visible;
+    font-size: 35px;
+    border-style: solid;
+    text-align: center;
+    font-style: var(--color);
+    opacity: 1;
+    border-radius: 15%;
+     transform: translateX(82px);
+     height: 40px;
+     width: 300px;
+     top: 10px;
+     background: var(--color);
+     color: #f2f3f0;
+     box-shadow: 0 0 5px var(--color),
+                 0 0 25px var(--color),
+                 0 0 50px var(--color),
+                 0 0 200px var(--color);
+
+}
+
+
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
+.tooltip {
+    position: absolute;
+    bottom: -50px;
+    left: 70%;
+    transform: translateX(-50%);
+    background-color: rgba(243, 229, 229, 0.7);
+    color: #fff;
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 4px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+
+
+
+
+
+
+/* Estilos gerais */
+
+    body {
+        background-image: url('img.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+       
+    }
+    
+
+
+.container2{
+    width: 40px;
+    height: 250px;
+    margin-top: -350%;
+    margin-left: 310%;
+    display: flex;
+    flex-direction: column;
+
+}
+.navbar {
+    display: flex;
+    flex-direction: row;
+    height: 15px;
+    margin-left: 55%;
+    list-style: none;
+}
+
+.navbar li a {
+    color: rgb(255, 255, 255); /* Define a cor das letras como vermelho */
+    display: block;
+    text-align: center;
+    padding: 10px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    text-decoration: underline;
+    color: #f8f8f8; /* Define a cor das letras ;inicio /topicos */
+    text-shadow: 
+     0 0 0 #fff,
+     0 0 2px #ff0000,
+     0 0 4px #ff0000,
+     0 0 6px #ff0000,
+     0 0 8px #ff0000;
+}
+
+.navbar li a:hover {
+    width: 110px;
+    height: 50px;
+    background-color: #f3f0f0; /* Cor de fundo ao passar o mouse */
+    background: var(--color);
+    color: #ff0000;
+    box-shadow: 0 0 5px var(--color),
+                0 0 25px var(--color),
+                0 0 50px var(--color),
+                0 0 200px var(--color);
+}
+
+
+
+img {
+    width: 150px;
+    height: 80px;
+    margin-left: 500%;
+    margin-top: 500%;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.expand-on-hover {
+    transition: transform 0.3s; /* Adiciona uma transição suave */
+}
+
+.expand-on-hover:hover {
+    transform: scale(2.1); /* Aumenta a escala da imagem em 10% (pode ajustar esse valor) */
+}
+
+body {
+    background-color: rgb(5, 5, 5);
+    background-image: url('img.jpg');
+    
+    animation-delay: 5s;
+}
+
+
+
+
+
+/* styles.css */
+.hidden {
+    display: none;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 50px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.7);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 80%;
+    max-height: 80%;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: rgb(241, 232, 232);
+}
+
+/* Estilos para os elementos de texto animados */
+#cyber-security {
+    font-size: 150px; /* Tamanho aumentado */
+    color: whitesmoke;
+    margin-left: 8%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: revealCyberSecurity 3s forwards; /* Maior tempo de animação */
+
+ 
+
+    padding: 30px;
+    margin-top: -200px; /* Ajuste a margem superior para mover para cima */
+}
+
+
+#warrior-angel {
+    font-size: 80px; /* Tamanho ajustado */
+    color: transparent;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    text-shadow: 
+    0 0 0 #ffffff,
+    0 0 2px #ff0000,
+    0 0 4px #ff0000,
+    0 0 6px #ff0000,
+    0 0 8px #ff0000,
+    0 0 10px #ff0000;
+
+    white-space: nowrap;
+    overflow: hidden;
+    animation: revealWarriorAngel 6s forwards; /* Aparece após o Cyber Security */
+    animation-delay: 5s; /* Inicia após a animação do Cyber Security */
+    margin-top: -50px;
+}
+#control-message {
+    font-size: 65px; /* Tamanho da mensagem de controle */
+    color: transparent;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: revealControlMessage 6s forwards; /* Aparece após o Warrior angel */
+    animation-delay: 3s; /* Inicia após a animação do Warrior angel */
+    margin-top: 20px; /* Ajuste a margem superior */
+}
+/* Estilos para o botão "Retomar Animação" */
+#pauseButton {
+    background-color: #ff0000; /* Cor de fundo */
+    color: #ffffff; /* Cor do texto */
+    font-size: 25px;
+    padding: 10px 10%; /* Espaçamento interno (topo/baixo, esquerda/direita) */
+    border: none; /* Sem borda */
+    margin-left: -40%;
+    margin-bottom: -50%;
+    border-radius: 30%; /* Borda arredondada */
+    bottom: 60px;
+    display: flex;
+    
+   
+    cursor: pointer; /* Alterar o cursor para uma mão ao passar o mouse */
+    transition: background-color 0.3s, transform 0.3s; /* Efeitos de transição */
+     /* Mover para a direita (centralizar) */
+}
+
+/* Estilos de hover para o botão */
+#pauseButton:hover {
+    background-color: #ff0000; /* Cor de fundo alterada ao passar o mouse */
+    transform: scale(1.05); /* Aumentar o tamanho do botão em 5% ao passar o mouse */
+}
+.container {
+    display: flex;
+}
+
+
+.button-container {
+    display: flex;
+    height: 120px;
+    width: 100px;
+    margin-left: 50px;
+    flex-direction: column;
+
+}
+.container1 {
+    background: transparent;
+    display: flex;
+}
+
+
+#colorChangeButton {
+    background-color: #0072b1;
+    color: #fff;
+    font-size: 25px;
+    padding: 10px 25%;
+    border: none;
+    border-radius: 30%;
+    cursor: pointer;
+    bottom: 60px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 52%;
+   
+    margin-left: -40%;
+
+    transition: background-color 0.3s, color 0.3s;
+
+}
+#myCanvas {
+    background-color: transparent;
+  }
+
+
+/* Estilos de hover para o botão */
+#colorChangeButton:hover {
+    background-color: #31abbb; /* Cor de fundo alterada ao passar o mouse */
+    color: #ffffff; /* Cor do texto alterada ao passar o mouse */
+    
+}
+
+/* Estilos para números verdes */
+.green-number {
+    color: #00b144 !important; /* Cor verde para os números (importante para substituir outras regras) */
+}
+
+
+@keyframes revealCyberSecurity {
+    0% {
+        width: 0;
+        color: transparent;
+    }
+    100% {
+        width: 100%;
+        color: rgb(255, 255, 255)
+    }
+}
+
+@keyframes revealWarriorAngel {
+    10% {
+        width: 0;
+        color: transparent;
+    }
+    100% {
+        width: 100%;
+        color: #ff0000cb;
+    }
+}
+
+@keyframes revealControlMessage {
+    0% {
+        width: 0;
+        color: transparent;
+    }
+    100% {
+        width: 100%;
+        color: rgb(255, 255, 255);
+    }
+}
+
+.animation-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    pointer-events: none;
+}
+
+.falling-numbers {
+    position: absolute;
+    font-size: 20px;
+    color: rgb(255, 0, 0);
+    opacity: 0;
+    animation: fall 5s linear infinite;
+}
+
+/* Estilos para números vermelhos */
+.red-number {
+    position: absolute;
+    font-size: 20px;
+    color: #ff0000;
+    opacity: 0;
+    animation: fall 5s linear infinite;
+}
+
+/* Estilos para números azuis */
+.blue-number {
+    position: absolute;
+    font-size: 20px;
+    color: rgb(255, 0, 0);
+    opacity: 0;
+    animation: fall 5s linear infinite;
+}
+
+@keyframes fall {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(100vh);
+    }
+}
